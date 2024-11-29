@@ -1,30 +1,29 @@
-# **Weather Dashboard**
+# **Weather Explorer**
 
-The Weather Dashboard is a modern, responsive weather app designed to provide real-time weather information for any city worldwide. Featuring a dark theme and clean design, it offers detailed insights into current weather conditions and additional environmental data.
+Weather Explorer is an intuitive web application that offers real-time weather data and forecasts for any city across the globe. Designed with a modern and minimalistic approach, the app provides a seamless user experience to access weather details in just a few clicks.
 
 ---
 
 ## **Features**
-- **Real-Time Weather Data**:
-  - Current temperature, weather conditions, and detailed descriptions.
-  - Feels-like temperature, maximum and minimum temperatures.
-  - Humidity, wind speed, visibility, and atmospheric pressure.
-- **Sunrise and Sunset**:
-  - Displays accurate local sunrise and sunset times for the selected city.
-- **User-Friendly Design**:
-  - Dark mode for a sleek and professional look.
-  - Clean, responsive layout for an intuitive user experience.
-- **Search Functionality**:
-  - Enter any city name to instantly fetch weather information.
+- **Weather Forecast**:
+  - Provides accurate weather forecasts for the next 7 days.
+  - Includes information on the expected temperature, weather conditions, and precipitation chances.
+- **Air Quality Data**:
+  - Displays real-time air quality index (AQI) for the selected city.
+  - Includes pollution levels, particulate matter, and other environmental factors.
+- **Interactive Map**:
+  - View a dynamic weather map with real-time cloud cover, temperature, and precipitation.
+- **Multiple City Support**:
+  - Switch between different cities to compare weather conditions.
 
 ---
 
 ## **How It Works**
-1. **Search for a City**: Enter a city name in the search bar to get the latest weather information.
-2. **Weather Information Display**:
-   - Current temperature and weather details.
-   - Additional metrics like humidity, wind speed, visibility, and pressure.
-   - Sunrise and sunset times displayed in local time.
+1. **City Search**: Use the search bar to enter any city’s name to get real-time weather data and forecasts.
+2. **Weather Dashboard**:
+   - View detailed weather forecasts for the coming days, including temperature, conditions, and precipitation.
+   - Air quality index is displayed alongside the weather data.
+3. **Compare Cities**: Add multiple cities to the dashboard and view their weather side by side.
 
 ---
 
@@ -32,23 +31,29 @@ The Weather Dashboard is a modern, responsive weather app designed to provide re
 
 | **Feature**              | **Screenshot**                                                                 |
 |---------------------------|-------------------------------------------------------------------------------|
-| **Search Results**        | ![Search Results](./assets/WhatsApp%20Image%202024-11-28%20at%2017.13.21_4ffd5bb2.jpg)    |
-| **Responsive Design**     | ![Responsive Design](./assets/WhatsApp%20Image%202024-11-28%20at%2017.14.04_b85d7770.jpg) |
-| **PostMan**     | ![Responsive Design](./assets/WhatsApp%20Image%202024-11-28%20at%2017.19.22_a7eacf16.jpg) |
-
-
+| **City Weather Overview** | ![City Weather Overview](./assets/Screenshot%202024-11-28%20190705.png)    |
+| **Air Quality Data**      | ![Air Quality Data](./assets/Screenshot%202024-11-28%20190714.png)          |
+| **Weather Map**           | ![Weather Map](./assets/image.png)                                           |
 
 ---
 
 ## **API Reference**
-The Weather Dashboard uses the **OpenWeatherMap API** to fetch real-time weather data. Below is an example of the API endpoint:
+Weather Explorer utilizes data from the **OpenWeatherMap API** for weather and forecast data, and **AirVisual API** for air quality information. Here’s an example of how to access the data:
 
-http://api.openweathermap.org/data/2.5/weather?q=<CITY_NAME>&appid=<API_KEY>
+**Weather Data Endpoint**:
+
+**Air Quality Endpoint**:
+
+http://api.airvisual.com/v2/city?city=<CITY_NAME>&state=<STATE>&country=<COUNTRY>&key=<API_KEY>
+
+
+---
 
 ## **Technology Stack**
 - **Frontend**: ReactJS
 - **Styling**: Tailwind CSS
 - **Icons**: React Icons
-- **API**: OpenWeatherMap
+- **Weather API**: OpenWeatherMap
+- **Air Quality API**: AirVisual
 
 ---

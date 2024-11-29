@@ -1,33 +1,88 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  font-family: 'Roboto Slab', serif; /* Changed to a serif font for a classic feel */
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4); /* Soft pink and peach gradient */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease-in-out;
 }
 
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 30px; /* Slightly larger padding for more breathing room */
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #3c3c3c; /* Deep charcoal for contrast */
+  font-size: 3rem; /* Larger and more impactful */
+  margin-bottom: 25px;
+  font-weight: 700; /* Bold for emphasis */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Softer and more noticeable shadow */
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
+    transform: translateY(-20px); /* Start from a higher position for a dramatic effect */
   }
   to {
-      opacity: 1;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fade-in {
-  animation: fadeIn 1.5s ease;
+  animation: fadeIn 1.5s ease-in-out; /* Longer and more fluid animation */
+}
+
+button {
+  background-color: #4caf50; /* Fresh green for a natural vibe */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded for a softer look */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Added depth with shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px); /* Adds lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  color: #0073e6; /* Vibrant blue */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00b57f; /* Darker blue on hover */
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50; /* Matches the button for consistency */
+  outline: none;
+}
+
+footer {
+  margin-top: 40px;
+  color: #3c3c3c;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
